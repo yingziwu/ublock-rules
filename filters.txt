@@ -57,7 +57,7 @@ alhs.link##html:style(-webkit-touch-callout: auto !important; -webkit-user-selec
 alhs.link##+js(rc, unselectable, body)
 
 !! 移除推广广告
-alhs.link###post_content > div:has(div:has-text([友情推广))
+alhs.link###post_content div:has(div:has-text([友情推广))
 
 
 ! 百度
