@@ -37,6 +37,8 @@ zhaoze.art##+js(aeld, click)
 ||alhs.link/wp-content/plugins/wp-ulike/
 ||alhs.link/wp-content/plugins/wp-user-frontend-pro/assets/js/conditional-logic.js
 
+alhs.link##.wpulike
+
 !! 移除复制限制
 alhs.link##+js(acis, image_save_msg)
 !!! 下方过滤规则等效上方 acis 规则 
@@ -74,7 +76,6 @@ alhs.link###post_content > div:has(div:has-text([友情推广))
 ||www.zhihu.com/sc-profiler
 ||static.zhihu.com/heifetz/main.signflow.*.js
 ||unpkg.zhimg.com/@cfe/sentry
-
 
 
 ! e-hentai 误屏蔽修复
