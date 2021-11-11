@@ -1,0 +1,79 @@
+! Title: bgme's uBlock filters
+! Expires: 1 days
+! Description: bgme's uBlock filters
+! Homepage: https://github.com/yingziwu/ublock-rules
+
+
+! 蔷薇后花园 
+! https://houhuayuan.xyz
+! 2021-11-11
+!
+!! 移除广告
+houhuayuan.xyz##div[id^="stage-"]
+!! 移除点击跳转广告
+houhuayuan.xyz##+js(aeld, load, popMagic)
+houhuayuan.xyz##+js(aeld, click)
+
+
+! 黑沼泽俱乐部
+! https://zhaoze.icu
+! 2021-11-11
+!
+!! 移除广告
+zhaoze.art##div[id^="zhaoz"]
+!! 移除点击跳转广告
+zhaoze.art##+js(aeld, load, popMagic)
+zhaoze.art##+js(aeld, click)
+
+
+! 艾利浩斯学院 图书馆
+! https://alhs.link
+! 2021-11-11
+!
+!||alhs.link/wp-content/plugins/ultimate-member/
+||alhs.link/wp-content/themes/argon*/assets/argon_js_merged.js
+||alhs.link/wp-includes/js/jquery/ui/datepicker.min.js
+||alhs.link/wp-includes/js/jquery/ui/mouse.min.js
+||alhs.link/wp-content/plugins/wp-ulike/
+||alhs.link/wp-content/plugins/wp-user-frontend-pro/assets/js/conditional-logic.js
+
+!! 移除复制限制
+alhs.link##+js(acis, image_save_msg)
+!!! 下方过滤规则等效上方 acis 规则 
+! alhs.link##+js(set, image_save_msg, '')
+! alhs.link##+js(set, disableEnterKey, noopFunc)
+! alhs.link##+js(set, wccp_free_iscontenteditable, noopFunc)
+! alhs.link##+js(set, disable_copy, noopFunc)
+! alhs.link##+js(set, disable_copy_ie, noopFunc)
+! alhs.link##+js(set, reEnable, noopFunc)
+! alhs.link##+js(set, disableSelection, noopFunc)
+! alhs.link##+js(set, touchstart, noopFunc)
+! alhs.link##+js(set, touchend, noopFunc)
+! alhs.link##+js(set, wccp_pro_is_passive, noopFunc)
+!!! 移除复制限制 CSS
+alhs.link##html:style(-webkit-touch-callout: auto !important; -webkit-user-select: auto !important; -khtml-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; user-select: auto !important;)
+alhs.link##+js(rc, unselectable, body)
+
+!! 移除推广广告
+alhs.link###post_content > div:has(div:has-text([友情推广))
+
+
+! 百度追踪过滤
+! 2021-11-11
+!
+||www.baidu.com/sugrec$xhr,1p
+||dlswbr.baidu.com/heicha/mw/abclite-*-s.js$script
+
+
+! 知乎追踪过滤
+! 2021-11-11
+||sugar.zhihu.com/plutus_adreaper$image,1p
+||www.zhihu.com/sc-profiler
+||static.zhihu.com/heifetz/main.signflow.*.js$script,domain=www.zhihu.com
+
+
+! e-hentai 误屏蔽修复
+! 2021-11-11
+!
+@@||*.hath.network^$image,domain=exhentai.org
+@@||*.hath.network^$image,domain=e-hentai.org
