@@ -59,7 +59,10 @@ zhaoze.art##+js(aeld, click)
 ! https://www.bilibili.com/
 ! 2021-11-13
 !
+!! 追踪过滤
 ||api.bilibili.com/x/web-show/res/locs$1p
+||api.bilibili.com/x/click-interface/web/heartbeat$1p
+
 
 
 ! 艾利浩斯学院 图书馆
