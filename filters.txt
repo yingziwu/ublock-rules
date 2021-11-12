@@ -41,18 +41,6 @@ alhs.link##.wpulike
 
 !! 移除复制限制
 alhs.link##+js(acis, image_save_msg)
-!!! 下方过滤规则等效上方 acis 规则 
-! alhs.link##+js(set, image_save_msg, '')
-! alhs.link##+js(set, disableEnterKey, noopFunc)
-! alhs.link##+js(set, wccp_free_iscontenteditable, noopFunc)
-! alhs.link##+js(set, disable_copy, noopFunc)
-! alhs.link##+js(set, disable_copy_ie, noopFunc)
-! alhs.link##+js(set, reEnable, noopFunc)
-! alhs.link##+js(set, disableSelection, noopFunc)
-! alhs.link##+js(set, touchstart, noopFunc)
-! alhs.link##+js(set, touchend, noopFunc)
-! alhs.link##+js(set, wccp_pro_is_passive, noopFunc)
-!!! 移除复制限制 CSS
 alhs.link##html:style(-webkit-touch-callout: auto !important; -webkit-user-select: auto !important; -khtml-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; user-select: auto !important;)
 alhs.link##+js(rc, unselectable, body)
 
@@ -83,3 +71,9 @@ alhs.link###post_content div:has(div:has-text([友情推广))
 !
 @@||*.hath.network^$image,domain=exhentai.org
 @@||*.hath.network^$image,domain=e-hentai.org
+
+
+! 移除 dt_* 追踪参数
+! 2021-11-12
+!
+*$removeparam=/^dt_/
