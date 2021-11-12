@@ -94,11 +94,22 @@ skk.moe##+js(aeld,copy)
 ! A岛匿名版误屏蔽修复
 ! https://adnmb3.com/
 ! 2021-11-12
+!
 @@||adcdn.fastmirror.org^$domain=adnmb3.com
 
 
 ! 夜幕爬虫安全论坛
 ! http://bbs.nightteam.cn/
 ! 2021-11-12
+!
 !! 移除剪贴板劫持
 bbs.nightteam.cn##+js(acis, addLink)
+
+
+! 起点
+! https://www.qidian.com/
+! 2021-11-12
+!
+!! 追踪过滤
+||uedas.qidian.com/statajax.aspx$1p
+||qdp.qidian.com/qreport$1p
