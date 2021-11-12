@@ -76,4 +76,5 @@ alhs.link###post_content div:has(div:has-text([友情推广))
 ! 移除 dt_* 追踪参数
 ! 2021-11-12
 !
-*$removeparam=/^dt_/
+$removeparam=dt_dapp
+$removeparam=dt_platform
