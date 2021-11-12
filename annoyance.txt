@@ -1,0 +1,41 @@
+! 艾利浩斯学院 图书馆
+! https://alhs.link
+! 2021-11-11
+!
+!||alhs.link/wp-content/plugins/ultimate-member/
+||alhs.link/wp-content/themes/argon*/assets/argon_js_merged.js
+||alhs.link/wp-includes/js/jquery/ui/datepicker.min.js
+||alhs.link/wp-includes/js/jquery/ui/mouse.min.js
+||alhs.link/wp-content/plugins/wp-ulike/
+||alhs.link/wp-content/plugins/wp-user-frontend-pro/assets/js/conditional-logic.js
+
+alhs.link##.wpulike
+
+!! 移除复制限制
+alhs.link##+js(acis, image_save_msg)
+alhs.link##html:style(-webkit-touch-callout: auto !important; -webkit-user-select: auto !important; -khtml-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; user-select: auto !important;)
+alhs.link##+js(rc, unselectable, body)
+
+!! 移除推广广告
+alhs.link###post_content div:has(div:has-text([友情推广))
+
+
+! sukka
+! https://skk.moe/
+! 2021-11-12
+!
+!! 追踪过滤
+||blog.skk.moe/js/vue.js$1p
+||skk.moe/react.js$1p
+!! 移除剪贴板劫持
+skk.moe##+js(aeld,copy)
+
+
+! 夜幕爬虫安全论坛
+! http://bbs.nightteam.cn/
+! 2021-11-12
+!
+!! 移除剪贴板劫持
+bbs.nightteam.cn##+js(acis, addLink)
+
+

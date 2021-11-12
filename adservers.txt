@@ -1,0 +1,22 @@
+! 蔷薇后花园 
+! https://houhuayuan.xyz
+! 2021-11-11
+!
+!! 移除广告
+houhuayuan.xyz##div[id^="stage-"]
+!! 移除点击跳转广告
+houhuayuan.xyz##+js(aeld, load, popMagic)
+houhuayuan.xyz##+js(aeld, click)
+
+
+! 黑沼泽俱乐部
+! https://zhaoze.icu
+! 2021-11-11
+!
+!! 移除广告
+zhaoze.art##div[id^="zhaoz"]
+!! 移除点击跳转广告
+zhaoze.art##+js(aeld, load, popMagic)
+zhaoze.art##+js(aeld, click)
+
+

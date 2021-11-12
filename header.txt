@@ -1,0 +1,6 @@
+! Title: bgme's uBlock filters
+! Expires: 1 days
+! Description: bgme's uBlock filters
+! Homepage: https://github.com/yingziwu/ublock-rules
+
+
