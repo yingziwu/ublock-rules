@@ -78,3 +78,14 @@ alhs.link###post_content div:has(div:has-text([友情推广))
 !
 $removeparam=dt_dapp
 $removeparam=dt_platform
+
+
+! sukka
+! https://skk.moe/
+! 2021-11-12
+!
+!! 追踪过滤
+||blog.skk.moe/js/vue.js$1p
+||skk.moe/react.js$1p
+!! 移除剪贴板劫持
+skk.moe##+js(aeld,copy)
