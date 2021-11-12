@@ -5,6 +5,15 @@ $removeparam=dt_dapp
 $removeparam=dt_platform
 
 
+! 移除 spm, scm 追踪参数
+! 2021-11-13
+!
+!! https://www.biaodianfu.com/spm.html
+!!
+$removeparam=spm
+$removeparam=scm
+
+
 ! 移除 Bilibili 追踪参数
 ! https://www.bilibili.com/
 ! 2021-11-13
@@ -23,14 +32,5 @@ $removeparam=dt_platform
 ||*.bilibili.com^$removeparam=timestamp
 ||*.bilibili.com^$removeparam=unique_k
 ||search.bilibili.com^$removeparam=from_source
-
-
-! 移除 spm, scm 追踪参数
-! 2021-11-13
-!
-!! https://www.biaodianfu.com/spm.html
-!!
-$removeparam=spm
-$removeparam=scm
 
 
