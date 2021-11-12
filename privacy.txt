@@ -27,3 +27,10 @@
 ||qdp.qidian.com/qreport$1p
 
 
+! Bilibili
+! https://www.bilibili.com/
+! 2021-11-13
+!
+||api.bilibili.com/x/web-show/res/locs$1p
+
+

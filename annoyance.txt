@@ -39,3 +39,13 @@ skk.moe##+js(aeld,copy)
 bbs.nightteam.cn##+js(acis, addLink)
 
 
+! Bilibili
+! https://www.bilibili.com/
+! 2021-11-13
+!
+!! 移除登录提醒
+bilibili.com##div:has(> div > .login-tip)
+bilibili.com##div:has(> .unlogin-popover)
+bilibili.com##.login-panel-popover
+
+
