@@ -2,5 +2,5 @@
 
 订阅地址：
 
-- https://github.com/yingziwu/ublock-rules/raw/master/filters.txt
-- https://cdn.jsdelivr.net/gh/yingziwu/ublock-rules@master/filters.txt
+- https://github.com/yingziwu/ublock-rules/raw/gh-pages/filters.txt
+- https://cdn.jsdelivr.net/gh/yingziwu/ublock-rules@gh-pages/filters.txt
