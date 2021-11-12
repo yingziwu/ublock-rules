@@ -89,3 +89,9 @@ $removeparam=dt_platform
 ||skk.moe/react.js$1p
 !! 移除剪贴板劫持
 skk.moe##+js(aeld,copy)
+
+
+! A岛匿名版误屏蔽修复
+! https://adnmb3.com/
+! 2021-11-12
+@@||adcdn.fastmirror.org^$domain=adnmb3.com
