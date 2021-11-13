@@ -10,7 +10,7 @@ jobs:
       - name: Build 🔧
         run: |
           mkdir dist &&
-          cat header.txt adservers.txt privacy.txt annoyance.txt traceparam.txt whitelist.txt > dist/filters.txt
+          cat header.txt src/*.txt > dist/filters.txt
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
