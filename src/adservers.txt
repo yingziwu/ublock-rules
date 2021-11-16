@@ -1,22 +1,29 @@
 ! 蔷薇后花园 
 ! https://houhuayuan.xyz
-! 2021-11-11
+! 2021-11-17
 !
 !! 移除广告
 houhuayuan.xyz##div[id^="stage-"]
-!! 移除点击跳转广告
-houhuayuan.xyz##+js(aeld, load, popMagic)
+!#if cap_html_filtering
+houhuayuan.xyz##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
+!#endif
+!#if !cap_html_filtering
 houhuayuan.xyz##+js(aeld, click)
-
+! houhuayuan.xyz##+js(aeld,click,,a)
+!#endif
 
 ! 黑沼泽俱乐部
-! https://zhaoze.icu
-! 2021-11-11
+! https://zhaoze.art
+! 2021-11-17
 !
 !! 移除广告
 zhaoze.art##div[id^="zhaoz"]
-!! 移除点击跳转广告
-zhaoze.art##+js(aeld, load, popMagic)
+!#if cap_html_filtering
+zhaoze.art##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
+!#endif
+!#if !cap_html_filtering
 zhaoze.art##+js(aeld, click)
+! zhaoze.art##+js(aeld,click,,a)
+!#endif
 
 

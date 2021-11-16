@@ -49,3 +49,7 @@ bilibili.com##div:has(> .unlogin-popover)
 bilibili.com##.login-panel-popover
 
 
+! 知乎专栏悬浮广告
+! 2021-11-17
+!
+zhuanlan.zhihu.com##+js(overlay-buster)
