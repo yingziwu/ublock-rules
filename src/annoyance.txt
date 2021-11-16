@@ -1,6 +1,7 @@
+!#if false
 ! 艾利浩斯学院 图书馆
 ! https://alhs.link
-! 2021-11-11
+! 2021-11-17
 !
 !||alhs.link/wp-content/plugins/ultimate-member/
 ||alhs.link/wp-content/themes/argon*/assets/argon_js_merged.js
@@ -18,7 +19,7 @@ alhs.link##+js(rc, unselectable, body)
 
 !! 移除推广广告
 alhs.link###post_content div:has(div:has-text([友情推广))
-
+!#endif
 
 ! sukka
 ! https://skk.moe/
