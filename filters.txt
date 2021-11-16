@@ -88,7 +88,10 @@ bilibili.com##.login-panel-popover
 ! 知乎专栏悬浮广告
 ! 2021-11-17
 !
-zhuanlan.zhihu.com##+js(overlay-buster)! 百度
+zhuanlan.zhihu.com##+js(overlay-buster)
+
+
+! 百度
 ! 2021-11-11
 !
 ! 追踪过滤
