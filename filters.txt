@@ -153,10 +153,6 @@ google.*##+js(ra,data-ved|data-async-context|data-hveid)
 google.*##+js(ra,eid)
 google.*^$removeparam=client
 google.*^$removeparam=ved
-||www.gstatic.com/og/*
-||www.google.com/xjs/*$script
-||encrypted-tbn0.gstatic.com/images$image
-
 
 ! 移除 dt_* 追踪参数
 ! 2021-11-12
