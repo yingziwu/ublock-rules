@@ -144,7 +144,6 @@ zhuanlan.zhihu.com##+js(overlay-buster)
 ||api.bilibili.com/x/click-interface/web/heartbeat$1p
 
 
-
 ! Google
 ! 2021-11-17
 !
@@ -155,6 +154,14 @@ google.*^$removeparam=client
 google.*^$removeparam=ved
 google.*^$removeparam=btnK
 google.*^$removeparam=iflsig
+
+
+! 搜狐号
+! https://mp.sohu.com
+! 2021-11-17
+!
+||api.interaction.sohu.com/api/topics/count
+
 
 
 ! 移除 dt_* 追踪参数
@@ -185,5 +192,11 @@ $removeparam=scm
 ! 2021-11-12
 !
 @@||adcdn.fastmirror.org^$domain=adnmb3.com
+
+! www.shuquge.com误屏蔽解除
+! AdGuard Chinese filter
+! 2021-11-17
+!
+@@*$cname,domain=www.shuquge.com
 
 
