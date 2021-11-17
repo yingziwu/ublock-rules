@@ -51,7 +51,6 @@
 ||api.bilibili.com/x/click-interface/web/heartbeat$1p
 
 
-
 ! Google
 ! 2021-11-17
 !
@@ -62,5 +61,13 @@ google.*^$removeparam=client
 google.*^$removeparam=ved
 google.*^$removeparam=btnK
 google.*^$removeparam=iflsig
+
+
+! 搜狐号
+! https://mp.sohu.com
+! 2021-11-17
+!
+||api.interaction.sohu.com/api/topics/count
+
 
 
