@@ -153,6 +153,9 @@ google.*##+js(ra,data-ved|data-async-context|data-hveid)
 google.*##+js(ra,eid)
 google.*^$removeparam=client
 google.*^$removeparam=ved
+google.*^$removeparam=btnK
+google.*^$removeparam=iflsig
+
 
 ! 移除 dt_* 追踪参数
 ! 2021-11-12
