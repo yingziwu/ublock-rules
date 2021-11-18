@@ -150,7 +150,6 @@ zhuanlan.zhihu.com##+js(overlay-buster)
 google.*##+js(ra,onmousedown,a)
 google.*##+js(ra,data-ved|data-async-context|data-hveid)
 google.*##+js(ra,eid)
-google.*^$removeparam=client
 google.*^$removeparam=ved
 google.*^$removeparam=btnK
 google.*^$removeparam=iflsig
