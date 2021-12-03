@@ -90,6 +90,12 @@ bilibili.com##.login-panel-popover
 !
 zhuanlan.zhihu.com##+js(overlay-buster)
 
+! Matter提醒登录广告
+! 2021-12-03
+!
+matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
+
+
 
 ! 百度
 ! 2021-11-11
@@ -192,10 +198,10 @@ $removeparam=scm
 !
 @@||adcdn.fastmirror.org^$domain=adnmb3.com
 
-! www.shuquge.com误屏蔽解除
+! 小说网站误屏蔽解除
 ! AdGuard Chinese filter
 ! 2021-11-17
 !
-@@*$cname,domain=www.shuquge.com
+@@*$cname,domain=www.shuquge.com|www.dizishu.com
 
 
