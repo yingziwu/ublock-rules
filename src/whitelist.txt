@@ -11,10 +11,10 @@
 !
 @@||adcdn.fastmirror.org^$domain=adnmb3.com
 
-! www.shuquge.com误屏蔽解除
+! 小说网站误屏蔽解除
 ! AdGuard Chinese filter
 ! 2021-11-17
 !
-@@*$cname,domain=www.shuquge.com
+@@*$cname,domain=www.shuquge.com|www.dizishu.com
 
 

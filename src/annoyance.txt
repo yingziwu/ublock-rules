@@ -55,4 +55,10 @@ bilibili.com##.login-panel-popover
 !
 zhuanlan.zhihu.com##+js(overlay-buster)
 
+! Matter提醒登录广告
+! 2021-12-03
+!
+matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
+
+
 
