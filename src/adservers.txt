@@ -8,8 +8,7 @@ houhuayuan.xyz##div[id^="stage-"]
 houhuayuan.xyz##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 !#endif
 !#if !cap_html_filtering
-houhuayuan.xyz##+js(aeld, click)
-! houhuayuan.xyz##+js(aeld,click,,a)
+houhuayuan.xyz##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
 ! 黑沼泽俱乐部
@@ -22,8 +21,7 @@ zhaoze.art##div[id^="zhaoz"]
 zhaoze.art##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 !#endif
 !#if !cap_html_filtering
-zhaoze.art##+js(aeld, click)
-! zhaoze.art##+js(aeld,click,,a)
+zhaoze.art##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
 
