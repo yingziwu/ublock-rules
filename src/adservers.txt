@@ -24,4 +24,4 @@ zhaoze.art##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 zhaoze.art##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
-
+!

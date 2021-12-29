@@ -50,6 +50,7 @@
 ||bilibili.com^$removeparam=timestamp
 ||bilibili.com^$removeparam=unique_k
 ||bilibili.com^$removeparam=from_source
+||bilibili.com^$removeparam=refer_from
 
 ||api.bilibili.com/x/web-show/res/locs$1p
 ||api.bilibili.com/x/click-interface/web/heartbeat$1p
@@ -72,5 +73,4 @@ google.*^$removeparam=iflsig
 !
 ||api.interaction.sohu.com/api/topics/count
 
-
-
+!
