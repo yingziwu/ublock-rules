@@ -73,4 +73,10 @@ google.*^$removeparam=iflsig
 !
 ||api.interaction.sohu.com/api/topics/count
 
+
+! 豆瓣
+! https://www.douban.com
+! 2022-01-18
+!
+||douban.com^$removeparam=_i
 !
