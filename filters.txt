@@ -169,6 +169,12 @@ google.*^$removeparam=iflsig
 !
 ||api.interaction.sohu.com/api/topics/count
 
+
+! 豆瓣
+! https://www.douban.com
+! 2022-01-18
+!
+||douban.com^$removeparam=_i
 !
 ! 移除 dt_* 追踪参数
 ! 2021-11-12
