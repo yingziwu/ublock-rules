@@ -31,29 +31,6 @@ zhaoze.art##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
 !
-!#if false
-! 艾利浩斯学院 图书馆
-! https://alhs.link
-! 2021-11-17
-!
-!||alhs.link/wp-content/plugins/ultimate-member/
-||alhs.link/wp-content/themes/argon*/assets/argon_js_merged.js
-||alhs.link/wp-includes/js/jquery/ui/datepicker.min.js
-||alhs.link/wp-includes/js/jquery/ui/mouse.min.js
-||alhs.link/wp-content/plugins/wp-ulike/
-||alhs.link/wp-content/plugins/wp-user-frontend-pro/assets/js/conditional-logic.js
-
-alhs.link##.wpulike
-
-!! 移除复制限制
-alhs.link##+js(acis, image_save_msg)
-alhs.link##html:style(-webkit-touch-callout: auto !important; -webkit-user-select: auto !important; -khtml-user-select: auto !important; -moz-user-select: auto !important; -ms-user-select: auto !important; user-select: auto !important;)
-alhs.link##+js(rc, unselectable, body)
-
-!! 移除推广广告
-alhs.link###post_content div:has(div:has-text([友情推广))
-!#endif
-
 ! sukka
 ! https://skk.moe/
 ! 2021-11-12
@@ -88,11 +65,18 @@ bilibili.com##.login-panel-popover
 !
 zhuanlan.zhihu.com##+js(overlay-buster)
 
+
 ! Matter提醒登录广告
 ! 2021-12-03
 !
 matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 
+
+! 豆瓣跳转至首页
+! 2022-01-23
+!
+/js/lib/internals/article-report.js$script,domain=douban.com
+/j/check_clean_content$xhr,domain=douban.com
 !
 ! 百度
 ! 2021-11-11
