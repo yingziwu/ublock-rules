@@ -159,8 +159,15 @@ google.*^$removeparam=iflsig
 ! 2022-01-18
 !
 ||douban.com^$removeparam=_i
+||douban.com^$removeparam=_dtcc
 !
-! 移除 dt_* 追踪参数
+
+
+! 微博国际版
+! https://share.api.weibo.cn
+! 2022-01-28
+share.api.weibo.cn^$removeparam=3Fweibo_id
+!! 移除 dt_* 追踪参数
 ! 2021-11-12
 !
 $removeparam=dt_dapp
