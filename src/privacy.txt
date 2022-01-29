@@ -79,4 +79,12 @@ google.*^$removeparam=iflsig
 ! 2022-01-18
 !
 ||douban.com^$removeparam=_i
+||douban.com^$removeparam=_dtcc
+!
+
+
+! 微博国际版
+! https://share.api.weibo.cn
+! 2022-01-28
+share.api.weibo.cn^$removeparam=weibo_id
 !
