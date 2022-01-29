@@ -166,7 +166,7 @@ google.*^$removeparam=iflsig
 ! 微博国际版
 ! https://share.api.weibo.cn
 ! 2022-01-28
-share.api.weibo.cn^$removeparam=3Fweibo_id
+share.api.weibo.cn^$removeparam=weibo_id
 !! 移除 dt_* 追踪参数
 ! 2021-11-12
 !
