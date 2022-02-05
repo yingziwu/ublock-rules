@@ -96,9 +96,6 @@ matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 ||www.zhihu.com/sc-profiler
 ||static.zhihu.com/heifetz/main.signflow.*.js
 ||unpkg.zhimg.com/@cfe/sentry
-||zhihu.com/search^$removeparam=search_source
-||zhihu.com/search^$removeparam=hybrid_search_source
-||zhihu.com/search^$removeparam=hybrid_search_extra
 
 
 
@@ -117,21 +114,6 @@ matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 !
 !! 追踪过滤
 !! https://github.com/AdguardTeam/AdguardFilters/pull/99685
-||bilibili.com^$removeparam=from
-||bilibili.com^$removeparam=seid
-||bilibili.com^$removeparam=share_source
-||bilibili.com^$removeparam=spm_id_from
-||bilibili.com^$removeparam=from_spm_id
-||bilibili.com^$removeparam=share_medium
-||bilibili.com^$removeparam=share_plat
-||bilibili.com^$removeparam=share_session_id
-||bilibili.com^$removeparam=share_source
-||bilibili.com^$removeparam=share_tag
-||bilibili.com^$removeparam=timestamp
-||bilibili.com^$removeparam=unique_k
-||bilibili.com^$removeparam=from_source
-||bilibili.com^$removeparam=refer_from
-
 ||api.bilibili.com/x/web-show/res/locs$1p
 ||api.bilibili.com/x/click-interface/web/heartbeat$1p
 
@@ -142,9 +124,6 @@ matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 google.*##+js(ra,onmousedown,a)
 google.*##+js(ra,data-ved|data-async-context|data-hveid)
 google.*##+js(ra,eid)
-google.*^$removeparam=ved
-google.*^$removeparam=btnK
-google.*^$removeparam=iflsig
 
 
 ! 搜狐号
@@ -152,26 +131,15 @@ google.*^$removeparam=iflsig
 ! 2021-11-17
 !
 ||api.interaction.sohu.com/api/topics/count
-
-
-! 豆瓣
-! https://www.douban.com
-! 2022-01-18
-!
-||douban.com^$removeparam=_i
-||douban.com^$removeparam=_dtcc
-!
-
-
-! 微博国际版
-! https://share.api.weibo.cn
-! 2022-01-28
-share.api.weibo.cn^$removeparam=weibo_id
-!! 移除 dt_* 追踪参数
-! 2021-11-12
+!!---------------------------------------------------------------------------!
+!-------------- General tracking parameters list  ----------------------------------!
+!---------------------------------------------------------------------------!
+! 移除 dt_* 、refer_uri_app 追踪参数
+! 2021-02-06
 !
 $removeparam=dt_dapp
 $removeparam=dt_platform
+$removeparam=refer_uri_app
 
 
 ! 移除 spm, scm 追踪参数
@@ -182,8 +150,104 @@ $removeparam=dt_platform
 $removeparam=spm
 $removeparam=scm
 
+
+!---------------------------------------------------------------------------!
+!-------------- Specific web sites ---------------------------------------------!
+!---------------------------------------------------------------------------!
+! Google
+! 2021-11-17
 !
-! e-hentai 误屏蔽修复
+||google.*^$removeparam=ved
+||google.*^$removeparam=btnK
+||google.*^$removeparam=iflsig
+
+! 知乎
+! 2021-11-11
+!
+||zhihu.com/search^$removeparam=search_source
+||zhihu.com/search^$removeparam=hybrid_search_source
+||zhihu.com/search^$removeparam=hybrid_search_extra
+
+! 豆瓣
+! https://www.douban.com
+! 2022-01-18
+!
+||douban.com^$removeparam=_i
+||douban.com^$removeparam=_dtcc
+
+! weibo
+! 2022-02-06
+||weibo.*^$removeparam=pagetype
+||weibo.*^$removeparam=from
+
+! bbc
+! 2022-01-30
+||bbc.com^$removeparam=at_medium
+||bbc.com^$removeparam=at_campaign
+||bbc.com^$removeparam=/^at_custom/
+||bbc.co.uk^$removeparam=at_medium
+||bbc.co.uk^$removeparam=at_campaign
+||bbc.co.uk^$removeparam=/^at_custom/
+
+! 小宇宙
+! 2022-01-30
+||xiaoyuzhoufm.com^$removeparam=s
+
+! twitter.com
+! 2022-01-30
+||twitter.com^$removeparam=s
+||twitter.com^$removeparam=t
+
+! mp.weixin.qq.com
+! 2022-02-06
+||mp.weixin.qq.com^$removeparam=from
+||mp.weixin.qq.com^$removeparam=subscene
+||mp.weixin.qq.com^$removeparam=clicktime
+||mp.weixin.qq.com^$removeparam=enterid
+
+! podcasts.apple.com
+! 2022-02-06
+||podcasts.apple.com^$removeparam=i
+||podcasts.apple.com^$removeparam=mt
+||podcasts.apple.com^$removeparam=itscg
+||podcasts.apple.com^$removeparam=itsct
+
+! open.spotify.com
+! 2022-02-06
+||open.spotify.com^$removeparam=si
+||open.spotify.com^$removeparam=context
+
+! dw.com
+! 2022-02-06
+||dw.com^$removeparam=maca
+
+! sohu.com
+! 2022-02-06
+||sohu.com^$removeparam=pvid
+
+! v.youku.com
+! 2022-02-06
+||v.youku.com^$removeparam=sharefrom
+||v.youku.com^$removeparam=sharekey
+
+! m.baidu.com
+! 2022-02-06
+||m.baidu.com/sf^$removeparam=frsrcid
+||m.baidu.com/sf^$removeparam=openapi
+||m.baidu.com/sf^$removeparam=cambrian_id
+||m.baidu.com/sf^$removeparam=baijiahao_id
+||m.baidu.com/sf^$removeparam=ext
+||m.baidu.com/sf^$removeparam=top
+||m.baidu.com/sf^$removeparam=_t
+
+! youtube.com
+! 2022-02-06
+||youtube.com^$removeparam=feature
+
+!---------------------------------------------------------------------------!
+!-------------- Whitelist ------------------------------------------------------!
+!---------------------------------------------------------------------------!
+!! e-hentai 误屏蔽修复
 ! 2021-11-11
 !
 @@||*.hath.network^$image,domain=exhentai.org
