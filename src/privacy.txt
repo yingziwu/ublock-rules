@@ -16,9 +16,6 @@
 ||www.zhihu.com/sc-profiler
 ||static.zhihu.com/heifetz/main.signflow.*.js
 ||unpkg.zhimg.com/@cfe/sentry
-||zhihu.com/search^$removeparam=search_source
-||zhihu.com/search^$removeparam=hybrid_search_source
-||zhihu.com/search^$removeparam=hybrid_search_extra
 
 
 
@@ -37,21 +34,6 @@
 !
 !! 追踪过滤
 !! https://github.com/AdguardTeam/AdguardFilters/pull/99685
-||bilibili.com^$removeparam=from
-||bilibili.com^$removeparam=seid
-||bilibili.com^$removeparam=share_source
-||bilibili.com^$removeparam=spm_id_from
-||bilibili.com^$removeparam=from_spm_id
-||bilibili.com^$removeparam=share_medium
-||bilibili.com^$removeparam=share_plat
-||bilibili.com^$removeparam=share_session_id
-||bilibili.com^$removeparam=share_source
-||bilibili.com^$removeparam=share_tag
-||bilibili.com^$removeparam=timestamp
-||bilibili.com^$removeparam=unique_k
-||bilibili.com^$removeparam=from_source
-||bilibili.com^$removeparam=refer_from
-
 ||api.bilibili.com/x/web-show/res/locs$1p
 ||api.bilibili.com/x/click-interface/web/heartbeat$1p
 
@@ -62,9 +44,6 @@
 google.*##+js(ra,onmousedown,a)
 google.*##+js(ra,data-ved|data-async-context|data-hveid)
 google.*##+js(ra,eid)
-google.*^$removeparam=ved
-google.*^$removeparam=btnK
-google.*^$removeparam=iflsig
 
 
 ! 搜狐号
@@ -72,19 +51,4 @@ google.*^$removeparam=iflsig
 ! 2021-11-17
 !
 ||api.interaction.sohu.com/api/topics/count
-
-
-! 豆瓣
-! https://www.douban.com
-! 2022-01-18
-!
-||douban.com^$removeparam=_i
-||douban.com^$removeparam=_dtcc
-!
-
-
-! 微博国际版
-! https://share.api.weibo.cn
-! 2022-01-28
-share.api.weibo.cn^$removeparam=weibo_id
 !
