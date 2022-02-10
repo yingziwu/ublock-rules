@@ -120,6 +120,13 @@ $removeparam=scm
 ! 2022-02-07
 ||reuters.com^$removeparam=taid
 
+
+! caixin.com
+! 2022-02-10
+||caixin.com^$removeparam=cxw
+||caixin.com^$removeparam=Sfrom
+||caixin.com^$removeparam=originReferrer
+
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
 !---------------------------------------------------------------------------!
