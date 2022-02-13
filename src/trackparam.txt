@@ -140,6 +140,12 @@ $removeparam=scm
 ||caixin.com^$removeparam=Sfrom
 ||caixin.com^$removeparam=originReferrer
 
+! itunes.apple.com
+! 2022-02-13
+||itunes.apple.com^$removeparam=pt
+||itunes.apple.com^$removeparam=ct
+||itunes.apple.com^$removeparam=mt
+
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
 !---------------------------------------------------------------------------!
