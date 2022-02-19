@@ -41,6 +41,7 @@ $removeparam=scm
 !
 ||douban.com^$removeparam=_i
 ||douban.com^$removeparam=_dtcc
+||douban.com^$removeparam=from
 
 ! weibo
 ! 2022-02-06
