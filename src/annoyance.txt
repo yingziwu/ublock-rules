@@ -44,4 +44,19 @@ matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 !
 /js/lib/internals/article-report.js$script,domain=douban.com
 /j/check_clean_content$xhr,domain=douban.com
+
+
+! 艾利浩斯学院 图书馆 移除禁止复制
+! 2022-03-25
+alhs.xyz##+js(rc,unselectable)
+!#if cap_html_filtering
+alhs.xyz##^script#wpcp_disable_selection
+alhs.xyz##^style:has-text(.unselectable)
+alhs.xyz##^style:has-text(@media print)
+!#endif
+!#if !cap_html_filtering
+alhs.xyz##+js(acis, image_save_msg, disable_copy(e))
+alhs.xyz##style:has-text(.unselectable)
+alhs.xyz##style:has-text(@media print)
+!#endif
 !

@@ -3,12 +3,12 @@
 ! 2021-11-17
 !
 !! 移除广告
-houhuayuan.xyz##div[id^="stage-"]
+houhuayuan.vip##div[id^="stage-"]
 !#if cap_html_filtering
-houhuayuan.xyz##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
+houhuayuan.vip##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 !#endif
 !#if !cap_html_filtering
-houhuayuan.xyz##+js(acis, document.querySelectorAll, popMagic)
+houhuayuan.vip##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
 ! 黑沼泽俱乐部
