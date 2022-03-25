@@ -9,12 +9,12 @@
 ! 2021-11-17
 !
 !! 移除广告
-houhuayuan.xyz##div[id^="stage-"]
+houhuayuan.vip##div[id^="stage-"]
 !#if cap_html_filtering
-houhuayuan.xyz##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
+houhuayuan.vip##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 !#endif
 !#if !cap_html_filtering
-houhuayuan.xyz##+js(acis, document.querySelectorAll, popMagic)
+houhuayuan.vip##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
 ! 黑沼泽俱乐部
@@ -77,6 +77,21 @@ matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 !
 /js/lib/internals/article-report.js$script,domain=douban.com
 /j/check_clean_content$xhr,domain=douban.com
+
+
+! 艾利浩斯学院 图书馆 移除禁止复制
+! 2022-03-25
+alhs.xyz##+js(rc,unselectable)
+!#if cap_html_filtering
+alhs.xyz##^script#wpcp_disable_selection
+alhs.xyz##^style:has-text(.unselectable)
+alhs.xyz##^style:has-text(@media print)
+!#endif
+!#if !cap_html_filtering
+alhs.xyz##+js(acis, image_save_msg, disable_copy(e))
+alhs.xyz##style:has-text(.unselectable)
+alhs.xyz##style:has-text(@media print)
+!#endif
 !
 ! 百度
 ! 2021-11-11
