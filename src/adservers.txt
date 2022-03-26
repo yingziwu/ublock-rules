@@ -24,4 +24,7 @@ zhaoze.art##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 zhaoze.art##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
+! 艾利浩斯学院 图书馆 推广广告
+! 2022-03-25
+alhs.xyz###post_content div[style="float: none; margin:0px 0 0px 0; text-align:center;"]
 !
