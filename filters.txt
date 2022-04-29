@@ -173,6 +173,10 @@ $removeparam=scm
 ! 2022-3-11
 $removeparam=utm_bccid
 
+! WeChat
+! 2022-4-29
+$removeparam=wechatShare
+
 !---------------------------------------------------------------------------!
 !-------------- Specific web sites ---------------------------------------------!
 !---------------------------------------------------------------------------!
@@ -229,6 +233,7 @@ $removeparam=utm_bccid
 ||mp.weixin.qq.com^$removeparam=enterid
 ||mp.weixin.qq.com^$removeparam=sharer_sharetime
 ||mp.weixin.qq.com^$removeparam=sharer_shareid
+||mp.weixin.qq.com^$removeparam=sessionid
 
 ! podcasts.apple.com
 ! 2022-02-06
@@ -305,6 +310,19 @@ $removeparam=utm_bccid
 ! rfi.fr
 ! 2022-03-05
 ||rfi.fr^$removeparam=ref
+
+! reddit.com
+! 2022-04-29
+||reddit.com^$removeparam=$deep_link
+||reddit.com^$removeparam=post_index
+||reddit.com^$removeparam=$3p
+
+! xiaohongshu.com
+! 2022-04-29
+||xiaohongshu.com^$removeparam=share_from_user_hidden
+||xiaohongshu.com^$removeparam=xhsshare
+||xiaohongshu.com^$removeparam=appuid
+||xiaohongshu.com^$removeparam=apptime
 
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
