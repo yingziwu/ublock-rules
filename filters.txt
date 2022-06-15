@@ -86,7 +86,7 @@ matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 ! 2022-03-25
 alhs.xyz##+js(rc,unselectable)
 !#if cap_html_filtering
-alhs.xyz##^script#wpcp_disable_selection
+alhs.xyz##^script[id^="wpcp_"]
 alhs.xyz##^style:has-text(.unselectable)
 alhs.xyz##^style:has-text(@media print)
 !#endif
@@ -95,6 +95,27 @@ alhs.xyz##+js(acis, image_save_msg, disable_copy(e))
 alhs.xyz##style:has-text(.unselectable)
 alhs.xyz##style:has-text(@media print)
 !#endif
+
+
+! 伍幺BDSM
+! 2022-06-14
+51bdsm.com##+js(rc,unselectable)
+!#if cap_html_filtering
+51bdsm.com##^script[id^="wpcp_"]
+51bdsm.com##^style:has-text(unselectable)
+51bdsm.com##^style:has-text(@media print)
+!#endif
+!#if !cap_html_filtering
+51bdsm.com##+js(acis, image_save_msg, disable_copy(e))
+51bdsm.com##style:has-text(.unselectable)
+51bdsm.com##style:has-text(@media print)
+!#endif
+
+
+! 留园、禁忌书屋水印
+! 2022-06-22
+6parkbbs.com##[color="#E6E6DD"]
+cool18.com##[color="#E6E6DD"]
 !
 ! 百度
 ! 2021-11-11
@@ -177,6 +198,13 @@ $removeparam=utm_bccid
 ! 2022-4-29
 $removeparam=wechatShare
 
+
+! BBC
+! 2022-06-14
+$removeparam=at_medium
+$removeparam=at_campaign
+$removeparam=/^at_custom/
+
 !---------------------------------------------------------------------------!
 !-------------- Specific web sites ---------------------------------------------!
 !---------------------------------------------------------------------------!
@@ -186,6 +214,7 @@ $removeparam=wechatShare
 ||google.*^$removeparam=ved
 ||google.*^$removeparam=btnK
 ||google.*^$removeparam=iflsig
+||google.*^$removeparam=shorturl
 
 ! 知乎
 ! 2021-11-11
@@ -207,15 +236,6 @@ $removeparam=wechatShare
 ||weibo.*^$removeparam=pagetype
 ||weibo.*^$removeparam=from
 
-! bbc
-! 2022-01-30
-||bbc.com^$removeparam=at_medium
-||bbc.com^$removeparam=at_campaign
-||bbc.com^$removeparam=/^at_custom/
-||bbc.co.uk^$removeparam=at_medium
-||bbc.co.uk^$removeparam=at_campaign
-||bbc.co.uk^$removeparam=/^at_custom/
-
 ! 小宇宙
 ! 2022-01-30
 ||xiaoyuzhoufm.com^$removeparam=s
@@ -234,6 +254,13 @@ $removeparam=wechatShare
 ||mp.weixin.qq.com^$removeparam=sharer_sharetime
 ||mp.weixin.qq.com^$removeparam=sharer_shareid
 ||mp.weixin.qq.com^$removeparam=sessionid
+||mp.weixin.qq.com^$removeparam=v_p
+||mp.weixin.qq.com^$removeparam=WBAPIAnalysisOriUICodes
+||mp.weixin.qq.com^$removeparam=launchid
+||mp.weixin.qq.com^$removeparam=wm
+||mp.weixin.qq.com^$removeparam=aid
+||mp.weixin.qq.com^$removeparam=isappinstalled
+||mp.weixin.qq.com^$removeparam=forceh5
 
 ! podcasts.apple.com
 ! 2022-02-06
@@ -323,6 +350,21 @@ $removeparam=wechatShare
 ||xiaohongshu.com^$removeparam=xhsshare
 ||xiaohongshu.com^$removeparam=appuid
 ||xiaohongshu.com^$removeparam=apptime
+
+! bilibili.com
+! 2022-06-14
+||bilibili.com^$removeparam=-Arouter
+||bilibili.com^$removeparam=broadcast_type
+||bilibili.com^$removeparam=is_room_feed
+
+! shuidichou.com
+! 2022-06-14
+||shuidichou.com^$removeparam=channel
+||shuidichou.com^$removeparam=source
+||shuidichou.com^$removeparam=forwardFrom
+||shuidichou.com^$removeparam=userSourceId
+||shuidichou.com^$removeparam=/^share/
+
 
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
