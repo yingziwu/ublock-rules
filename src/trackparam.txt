@@ -26,6 +26,13 @@ $removeparam=utm_bccid
 ! 2022-4-29
 $removeparam=wechatShare
 
+
+! BBC
+! 2022-06-14
+$removeparam=at_medium
+$removeparam=at_campaign
+$removeparam=/^at_custom/
+
 !---------------------------------------------------------------------------!
 !-------------- Specific web sites ---------------------------------------------!
 !---------------------------------------------------------------------------!
@@ -35,6 +42,7 @@ $removeparam=wechatShare
 ||google.*^$removeparam=ved
 ||google.*^$removeparam=btnK
 ||google.*^$removeparam=iflsig
+||google.*^$removeparam=shorturl
 
 ! 知乎
 ! 2021-11-11
@@ -56,15 +64,6 @@ $removeparam=wechatShare
 ||weibo.*^$removeparam=pagetype
 ||weibo.*^$removeparam=from
 
-! bbc
-! 2022-01-30
-||bbc.com^$removeparam=at_medium
-||bbc.com^$removeparam=at_campaign
-||bbc.com^$removeparam=/^at_custom/
-||bbc.co.uk^$removeparam=at_medium
-||bbc.co.uk^$removeparam=at_campaign
-||bbc.co.uk^$removeparam=/^at_custom/
-
 ! 小宇宙
 ! 2022-01-30
 ||xiaoyuzhoufm.com^$removeparam=s
@@ -83,6 +82,13 @@ $removeparam=wechatShare
 ||mp.weixin.qq.com^$removeparam=sharer_sharetime
 ||mp.weixin.qq.com^$removeparam=sharer_shareid
 ||mp.weixin.qq.com^$removeparam=sessionid
+||mp.weixin.qq.com^$removeparam=v_p
+||mp.weixin.qq.com^$removeparam=WBAPIAnalysisOriUICodes
+||mp.weixin.qq.com^$removeparam=launchid
+||mp.weixin.qq.com^$removeparam=wm
+||mp.weixin.qq.com^$removeparam=aid
+||mp.weixin.qq.com^$removeparam=isappinstalled
+||mp.weixin.qq.com^$removeparam=forceh5
 
 ! podcasts.apple.com
 ! 2022-02-06
@@ -172,6 +178,21 @@ $removeparam=wechatShare
 ||xiaohongshu.com^$removeparam=xhsshare
 ||xiaohongshu.com^$removeparam=appuid
 ||xiaohongshu.com^$removeparam=apptime
+
+! bilibili.com
+! 2022-06-14
+||bilibili.com^$removeparam=-Arouter
+||bilibili.com^$removeparam=broadcast_type
+||bilibili.com^$removeparam=is_room_feed
+
+! shuidichou.com
+! 2022-06-14
+||shuidichou.com^$removeparam=channel
+||shuidichou.com^$removeparam=source
+||shuidichou.com^$removeparam=forwardFrom
+||shuidichou.com^$removeparam=userSourceId
+||shuidichou.com^$removeparam=/^share/
+
 
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!

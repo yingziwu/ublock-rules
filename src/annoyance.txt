@@ -50,7 +50,7 @@ matters.news##.show.outer.jsx-115941569 > .fixed-main.jsx-824946541
 ! 2022-03-25
 alhs.xyz##+js(rc,unselectable)
 !#if cap_html_filtering
-alhs.xyz##^script#wpcp_disable_selection
+alhs.xyz##^script[id^="wpcp_"]
 alhs.xyz##^style:has-text(.unselectable)
 alhs.xyz##^style:has-text(@media print)
 !#endif
@@ -59,4 +59,25 @@ alhs.xyz##+js(acis, image_save_msg, disable_copy(e))
 alhs.xyz##style:has-text(.unselectable)
 alhs.xyz##style:has-text(@media print)
 !#endif
+
+
+! 伍幺BDSM
+! 2022-06-14
+51bdsm.com##+js(rc,unselectable)
+!#if cap_html_filtering
+51bdsm.com##^script[id^="wpcp_"]
+51bdsm.com##^style:has-text(unselectable)
+51bdsm.com##^style:has-text(@media print)
+!#endif
+!#if !cap_html_filtering
+51bdsm.com##+js(acis, image_save_msg, disable_copy(e))
+51bdsm.com##style:has-text(.unselectable)
+51bdsm.com##style:has-text(@media print)
+!#endif
+
+
+! 留园、禁忌书屋水印
+! 2022-06-22
+6parkbbs.com##[color="#E6E6DD"]
+cool18.com##[color="#E6E6DD"]
 !
