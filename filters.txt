@@ -371,6 +371,11 @@ $removeparam=/^at_custom/
 ||bbc.com^$removeparam=/^pinned_/
 ||bbc.co.uk^$removeparam=/^pinned_/
 
+! 百家号
+! 2022-06-18
+||baijiahao.baidu.com^$removeparam=wfr
+||baijiahao.baidu.com^$removeparam=for
+||baijiahao.baidu.com^$removeparam=searchword
 
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
