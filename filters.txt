@@ -357,14 +357,13 @@ $removeparam=/^at_custom/
 ||bilibili.com^$removeparam=broadcast_type
 ||bilibili.com^$removeparam=is_room_feed
 
-! shuidichou.com
+! 水滴筹
 ! 2022-06-14
 ||shuidichou.com^$removeparam=channel
 ||shuidichou.com^$removeparam=source
 ||shuidichou.com^$removeparam=forwardFrom
 ||shuidichou.com^$removeparam=userSourceId
 ||shuidichou.com^$removeparam=/^share/
-
 
 ! bbc
 ! 2022-01-30
@@ -376,6 +375,11 @@ $removeparam=/^at_custom/
 ||baijiahao.baidu.com^$removeparam=wfr
 ||baijiahao.baidu.com^$removeparam=for
 ||baijiahao.baidu.com^$removeparam=searchword
+
+! 3g.163.com
+! 2022-06-20
+||3g.163.com^$removeparam=referFrom
+||3g.163.com^$removeparam=spss
 
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
