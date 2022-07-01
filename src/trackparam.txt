@@ -209,6 +209,24 @@ $removeparam=/^at_custom/
 ||3g.163.com^$removeparam=referFrom
 ||3g.163.com^$removeparam=spss
 
+! 快手
+! 2022-07-01
+||kuaishou.com^$removeparam=fid
+||kuaishou.com^$removeparam=cc
+||kuaishou.com^$removeparam=followRefer
+||kuaishou.com^$removeparam=/^share/
+||kuaishou.com^$removeparam=docId
+||kuaishou.com^$removeparam=kpn
+||kuaishou.com^$removeparam=subBiz
+||kuaishou.com^$removeparam=photoId
+||kuaishou.com^$removeparam=userId
+||kuaishou.com^$removeparam=et
+||kuaishou.com^$removeparam=isNoRadical
+||kuaishou.com^$removeparam=originShareId
+||kuaishou.com^$removeparam=appType
+||kuaishou.com^$removeparam=timestamp
+||kuaishou.com^$removeparam=location
+
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
 !---------------------------------------------------------------------------!
