@@ -227,6 +227,13 @@ $removeparam=/^at_custom/
 ||kuaishou.com^$removeparam=timestamp
 ||kuaishou.com^$removeparam=location
 
+! CSDN
+! 2022-07-02
+||csdn.net^$removeparam=/^app_/
+||csdn.net^$removeparam=code
+||csdn.net^$removeparam=/^csdn_share_/
+||csdn.net^$removeparam=ctrtid
+
 !---------------------------------------------------------------------------!
 !-------------- Whitelist ------------------------------------------------------!
 !---------------------------------------------------------------------------!
