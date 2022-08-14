@@ -185,7 +185,6 @@ $removeparam=/^at_custom/
 ||bilibili.com^$removeparam=broadcast_type
 ||bilibili.com^$removeparam=is_room_feed
 ||bilibili.com^$removeparam=vd_source
-||bilibili.com^$removeparam=mid
 ||bilibili.com^$removeparam=/^share_/
 
 ! 水滴筹
