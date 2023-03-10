@@ -80,4 +80,9 @@ alhs.xyz##style:has-text(@media print)
 ! 2022-06-22
 6parkbbs.com##[color="#E6E6DD"]
 cool18.com##[color="#E6E6DD"]
+
+
+! 哩哔轻小说广告过滤提示
+! 2023-03-10
+||linovelib.com##^script:has-text('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
 !
