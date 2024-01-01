@@ -5,7 +5,7 @@
 
 
 ! 蔷薇后花园 
-! https://houhuayuan.xyz
+! https://houhuayuan.vip
 ! 2021-11-17
 !
 !! 移除广告
@@ -18,16 +18,16 @@ houhuayuan.vip##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
 ! 黑沼泽俱乐部
-! https://zhaoze.vip
+! https://zhaoze.pro
 ! 2023-07-02
 !
 !! 移除广告
-zhaoze.vip##div[id^="zhaoz"]
+zhaoze.pro##div[id^="zhaoz"]
 !#if cap_html_filtering
-zhaoze.vip##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
+zhaoze.pro##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 !#endif
 !#if !cap_html_filtering
-zhaoze.vip##+js(acis, document.querySelectorAll, popMagic)
+zhaoze.pro##+js(acis, document.querySelectorAll, popMagic)
 !#endif
 
 ! 艾利浩斯学院 图书馆 推广广告
