@@ -186,6 +186,13 @@ $removeparam=/^at_custom/
 ||bilibili.com^$removeparam=is_room_feed
 ||bilibili.com^$removeparam=vd_source
 ||bilibili.com^$removeparam=/^share_/
+||bilibili.com^$removeparam=buvid
+||bilibili.com^$removeparam=from_spmid
+||bilibili.com^$removeparam=is_story_h5
+||bilibili.com^$removeparam=mid
+||bilibili.com^$removeparam=plat_id
+||bilibili.com^$removeparam=spmid
+||bilibili.com^$removeparam=up_id
 
 ! 水滴筹
 ! 2022-06-14
