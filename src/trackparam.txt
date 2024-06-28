@@ -168,7 +168,7 @@ $removeparam=/^at_custom/
 
 ! reddit.com
 ! 2022-04-29
-||reddit.com^$removeparam=$deep_link
+||reddit.com^$removeparam=\$deep_link
 ||reddit.com^$removeparam=post_index
 ||reddit.com^$removeparam=$3p
 

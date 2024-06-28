@@ -84,5 +84,5 @@ cool18.com##[color="#E6E6DD"]
 
 ! 哩哔轻小说广告过滤提示
 ! 2023-03-10
-||linovelib.com##^script:has-text('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+www.linovelib.com##^script:has-text('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
 !
