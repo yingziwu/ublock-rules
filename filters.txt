@@ -9,13 +9,14 @@
 ! 2021-11-17
 !
 !! 移除广告
-houhuayuan.vip##div[id^="stage-"]
+houhuayuan.pro##div[id^="stage-"]
 !#if cap_html_filtering
-houhuayuan.vip##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
+houhuayuan.pro##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 !#endif
 !#if !cap_html_filtering
-houhuayuan.vip##+js(acis, document.querySelectorAll, popMagic)
+houhuayuan.pro##+js(acis, document.querySelectorAll, popMagic)
 !#endif
+||kgfjrb711.com^$script,domain=houhuayuan.pro
 
 ! 黑沼泽俱乐部
 ! https://zhaoze.pro
@@ -29,6 +30,7 @@ zhaoze.pro##^script:has-text(/adConfig|popMagic|advanced_ads_ready_queue/)
 !#if !cap_html_filtering
 zhaoze.pro##+js(acis, document.querySelectorAll, popMagic)
 !#endif
+||kgfjrb711.com^$script,domain=zhaoze.pro
 
 ! 艾利浩斯学院 图书馆 推广广告
 ! 2022-03-25
